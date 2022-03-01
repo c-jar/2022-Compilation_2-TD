@@ -1,0 +1,10 @@
+Figure{
+	Segment{
+		Point(1,30)
+		Point(20,30)
+	}
+	Segment{
+		Point(2,10)
+		Point(1,30)
+	}
+}

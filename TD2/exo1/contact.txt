@@ -1,0 +1,11 @@
+Personne {
+ Contact {
+  numero_tel "0567596867"
+ }
+ Contact{
+ email "toto@laposte.net"
+ 
+ Contact{
+ numero_tel "0661496867"
+ }
+ }
