@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE ListePieces SYSTEM "ListePieces.dtd">
+<ListePieces>
+	<Piece reference="P834" modele="2CV" dispo="unique" etat="neuf">
+		<Description>Pot d'échappement</Description>
+		<Prix>150€</Prix>
+	</Piece>
+	<Piece reference="T563" modele="Mini"
+		dispo="commandable_chez_constructeur" etat="neuf">
+	<Description>sigle&lt;a&gt;hh&lt;/a&gt;</Description>
+		<Prix>50€</Prix>
+	</Piece>
+	<Piece reference="M546" modele="2CV" etat="occasion">
+		<Description>volant</Description>
+		<Prix>100€</Prix>
+	</Piece>
+</ListePieces>

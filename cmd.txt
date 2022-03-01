@@ -1,2 +1,0 @@
-flex scrip.l
- gcc lex.yy.c -o TD1_exo_1 -lfl 

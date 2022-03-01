@@ -1,0 +1,13 @@
+<!ELEMENT ListePieces (Piece|Lot)+>
+<!ELEMENT Piece (Description,Prix)>
+<!ELEMENT Prix (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ATTLIST Piece
+	reference ID #REQUIRED
+	modele (2CV|Mini|Coccinelle) "2CV"
+	disponibilite (unique|
+	commandable_chez_constructeur) "unique"
+	etat (neuf|stock_invendu|occasion) "neuf">
+<!ELEMENT Lot (Description,Prix)>
+<!ATTLIST Lot 
+	ListePieces IDREFS #REQUIRED>

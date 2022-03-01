@@ -14,6 +14,7 @@ identifiant [a-zA-Z][a-zA-Z0-9]*
 <BALISE>{identifiant} { printf("Attribut :<%s>\n",yytext); BEGIN AFFECTATION;}
 <BALISE>" " /* ignorer */
 <BALISE>">" { BEGIN INITIAL; }
+<BALISE>\n              /* On ignore les \n uniquement dans la balise */
 <BALISE>. { printf("Erreur\n"); yyterminate();}
 <AFFECTATION>= { BEGIN PRECHAINE; }
 <AFFECTATION>" " /* ignorer */
@@ -24,5 +25,4 @@ identifiant [a-zA-Z][a-zA-Z0-9]*
 <CHAINEVIDE>[^\"]* { printf("chaine:<%s>\n",yytext); BEGIN CHAINE;}
 <CHAINEVIDE>\" { printf ("chaine vide\n"); BEGIN BALISE; }
 <CHAINE>\" {BEGIN BALISE;}
-\n /* ignorer */
 %%

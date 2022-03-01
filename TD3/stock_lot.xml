@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!DOCTYPE ListePieces SYSTEM "ListePieces_avec_lot.dtd">
+<ListePieces>
+	<Piece reference="P834" modele="2CV" disponibilite="unique" etat="neuf">
+		<Description>Pot d'échappement</Description>
+		<Prix>150€</Prix>
+	</Piece>
+	<Piece reference="T563" modele="Mini" disponibilite="unique" etat="neuf">
+		<Description>sigle</Description>
+		<Prix>50€</Prix>
+	</Piece>
+	<Piece reference="M546" modele="2CV" disponibilite="unique" etat="occasion">
+		<Description>volant</Description>
+		<Prix>100€</Prix>
+	</Piece>
+	<Lot ListePieces="P834 M546">
+		<Description> Lot pour 2CV</Description>
+		<Prix> 200 €</Prix>
+	</Lot>
+</ListePieces>
